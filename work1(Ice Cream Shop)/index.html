@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Paradise Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script href="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ice Cream Paradise</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Ice Cream Paradise</h2>
+            <p>The best ice creams in town!</p>
+            <button id="orderButton" onclick="scrollToOrder()">Order Now</button>
+        </div>
+    </section>
+
+    <section class="site">
+
+      <div class="site1">
+        <img src="pexels-prithpal-bhatia-530811-2518078.jpg">
+      </div>
+
+      <div class="site2">
+
+<div>
+<img src="pexels-godric-19444992.jpg" alt="">
+</div>
+
+<div>
+ <img src="pexels-david-disponett-1118410-16560453.jpg">
+</div>
+
+<div>
+<img src="pexels-micheile-7886451.jpg" alt="">
+</div>
+
+
+
+
+<div>
+<img src="pexels-teejay-1362534.jpg" alt="">
+</div>
+         
+         
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Delicious Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="icons8-ice-cream-50.png" alt="Vanilla Ice Cream">
+                <h3>Vanilla</h3>
+                <p>R9.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="icons8-ice-cream-50-2.png" alt="Chocolate Ice Cream">
+                <h3>Chocolate</h3>
+                <p>R11.49</p>
+            </div>
+            <div class="menu-item">
+                <img src="icons8-ice-cream-50-3.png" alt="Strawberry Ice Cream">
+                <h3>Strawberry</h3>
+                <p>R6.29</p>
+            </div>
+            <div class="menu-item">
+                <img src="icons8-ice-cream-50-4.png" alt="Mint Ice Cream">
+                <h3>Mint</h3>
+                <p>R15.59</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order-section">
+        <h2>Place Your Order</h2>
+        <form id="orderForm" onsubmit="return handleOrder(event)">
+            <label for="flavor">Choose your ice cream flavor:</label>
+            <select id="flavor" required>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="mint">Mint</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <div id="orderConfirmation" class="hidden">
+            <h3>Order Confirmation</h3>
+            <p id="orderDetails"></p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>For any inquiries, feel free to reach out to us:</p>
+        <p>Email: info@icecreamparadise.com</p>
+        <p>Phone: +27 79 133 680</p>
+ <br>
+        <p>&copy; 2025 Ice Cream Paradise. All rights reserved.</p>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
