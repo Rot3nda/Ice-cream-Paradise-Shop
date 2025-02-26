@@ -12,7 +12,7 @@
         <div class="logo">
             <h1>Ice Cream Paradise</h1>
         </div>
-        <nav>
+        <nav class="nav1">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -20,63 +20,55 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <nav class="nav2">
+            <img onclick="sidebarPop()" id="menu" src="icons8-menu-48.png">
+        </nav>
     </header>
+
+    <div id="sidebar" class="sidebar">
+
+        <img id="back" onclick="sidebarOff()" src="icons8-cross-48.png">
+
+        <h1>Menu</h1>
+
+        <ul>
+            <li>Samples</li>
+            <li>Menu</li>
+            <li>Place order</li>
+            <li>Contact</li>
+        </ul>
+        
+
+    </div>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to Ice Cream Paradise</h2>
-            <p>The best ice creams in town!</p>
+            <h2 id="l1">Welcome to Ice Cream Paradise</h2>
+            <p id="l2">The best ice creams in town!</p>
             <button id="orderButton" onclick="scrollToOrder()">Order Now</button>
         </div>
     </section>
 
-    <section class="site">
+<section class="site">
 
-      <div class="site1">
-        <img src="pexels-prithpal-bhatia-530811-2518078.jpg">
-      </div>
-
-      <div class="site2">
+    <div class="site1">
+     <img src="pexels-prithpal-bhatia-530811-2518078.jpg">
+    </div>
 
 
+<div class="site2">
 
+<img id="i1" src="pexels-micheile-7886451.jpg" alt="">
+<img id="i2" src="pexels-jill-wellington-1638660-461189.jpg" alt="">
+<img id="i3" src="pexels-teejay-1362534.jpg" alt="">    
+<img id="i4" src="pexels-goumbik-1352282.jpg" alt="">
+<img id="i5" src="pexels-almapapi-2586924.jpg" alt="">
+<img id="i6" src="pexels-chetanvlad-1752506.jpg" alt="">
 
-<img src="pexels-micheile-7886451.jpg" alt="">
+</div>
 
-<img src="pexels-jill-wellington-1638660-461189.jpg" alt="">
-
-
-<img src="pexels-teejay-1362534.jpg" alt="">    
-    
-    <!---
-    
-   
-    
-
-
-
-
-
-         
-     
-
-    <img src="pexels-teejay-1362534.jpg" alt="">
-  
-
-
-<img src="pexels-teejay-1362534.jpg" a
-      
-
-
-    <img src="pexels-teejay-1362534.jpg" al
-
-
-<img src="pexels-teejay-1362534.jpg" alt="">
-
-      -->
-
-      </div>
-    </section>
+</section>
 
     <section id="menu" class="menu-section">
         <h2>Our Delicious Menu</h2>

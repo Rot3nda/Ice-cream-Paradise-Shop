@@ -30,3 +30,22 @@ function handleOrder(event) {
     // Clear the form
     document.getElementById('orderForm').reset();
 }
+
+function sidebarPop(){
+    document.getElementById("sidebar").style.display="block";
+    document.getElementById("back").style.display="block";
+    document.getElementById("menu").style.display="none";
+    document.getElementById("l1").style.visibility="hidden";
+    document.getElementById("l2").style.visibility="hidden";
+    document.getElementById("orderButton").style.visibility="hidden";
+ }
+  
+                                              // sidebar disappears
+ function sidebarOff(){
+    document.getElementById("sidebar").style.display="none";
+    document.getElementById("back").style.display="none";
+    document.getElementById("menu").style.display="block";
+    document.getElementById("l1").style.visibility="visible";
+    document.getElementById("l2").style.visibility="visible";
+    document.getElementById("orderButton").style.visibility="visible";
+ }
