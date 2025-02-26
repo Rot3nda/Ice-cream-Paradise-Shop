@@ -360,16 +360,18 @@ button:hover {
 
 @media screen and (max-width:425px) {
 
+
+    header .logo h1 {
+        font-size: 1.2rem;
+        font-family: cursive;
+    }
+
     .hero h2 {
         font-size: 2.3rem;
     }
     
     .hero p {
         font-size: 1rem;
-    }
-
-    .site{
-      
     }
 
     .site2 img{
